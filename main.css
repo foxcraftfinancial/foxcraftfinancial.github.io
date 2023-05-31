@@ -245,19 +245,34 @@
       display: flex;
       margin-bottom: 20px;
     }
+.service-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #F9A825;
+  border-radius: 50%;
+  margin-right: 20px;
+}
 
-    .service-icon {
-      width: 60px;
-      height: 60px;
-      background-color: #F9A825;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 20px;
-      color: #fff;
-      font-size: 24px;
-    }
+.logo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+   
 
     .contact-info {
       display: flex;
