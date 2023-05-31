@@ -439,26 +439,6 @@ footer p {
 
 /* Styles for mobile devices */
 /* Styles for iPhone 12 mini screen */
-@media (max-width: 375px) {
-    
-    
-  .pricing-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .pricing-package {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .pricing-package ul {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-}
-
 @media (max-width: 767px) {
   .pricing-package {
     flex-direction: column;
@@ -469,10 +449,23 @@ footer p {
     box-sizing: border-box;
   }
 
+  .pricing-package h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .pricing-package p {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
   .pricing-package ul {
+    font-size: 14px;
     margin-top: 10px;
   }
 }
+
 
 /* Styles for tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
