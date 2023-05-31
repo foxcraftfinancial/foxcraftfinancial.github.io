@@ -440,6 +440,8 @@ footer p {
 /* Styles for mobile devices */
 /* Styles for iPhone 12 mini screen */
 @media (max-width: 375px) {
+    
+    
   .pricing-container {
     display: flex;
     flex-direction: column;
@@ -457,6 +459,19 @@ footer p {
   }
 }
 
+@media (max-width: 767px) {
+  .pricing-package {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .pricing-package ul {
+    margin-top: 10px;
+  }
 }
 
 /* Styles for tablets */
