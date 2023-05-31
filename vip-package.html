@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foxcraft Financial - VIP Package</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* Add your custom styles here */
+    body {
+      background-color: #000;
+      color: #FFF;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #F9A825;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    #package-details {
+      padding: 50px;
+      text-align: center;
+    }
+
+    #package-details h2 {
+      color: #F9A825;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .package-detail {
+      margin-bottom: 30px;
+    }
+
+    .detail-label {
+      display: block;
+      color: #F9A825;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .detail-description {
+      display: block;
+      color: #FFF;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .detail-info {
+      color: #CCC;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    #request-info {
+      padding: 50px;
+      text-align: center;
+    }
+
+    #request-info h3 {
+      color: #F9A825;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      color: #F9A825;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: none;
+      background-color: #FFF;
+      color: #333;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    .submit-btn {
+      background-color: #F9A825;
+      color: #FFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .submit-btn:hover {
+      background-color: #FFB74D;
+    }
+
+    footer {
+      background-color: #444;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      color: #FFF;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Foxcraft Financial Coaching and Advising</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="package-details" style="background-color: #333">
+    <h2>VIP Package</h2>
+    <ul>
+      <li class="package-detail">
+        <span class="detail-label">Initial Consultation:</span>
+        <span class="detail-description">1 hour</span>
+        <p class="detail-info">In the initial consultation, our financial experts will discuss your financial goals in detail and assess your current financial situation.</p>
+      </li>
+      <li class="package-detail">
+        <span class="detail-label">Comprehensive Financial Analysis:</span>
+        <span class="detail-description">2 hours</span>
+        <p class="detail-info">Our team will conduct a comprehensive analysis of your finances, including investment portfolio evaluation, tax planning, and retirement planning.</p>
+      </li>
+      <li class="package-detail">
+        <span class="detail-label">Personalized Financial Strategies:</span>
+        <span class="detail-description">Customized</span>
+        <p class="detail-info">Based on your financial goals and analysis, we will develop personalized strategies to optimize your financial situation and maximize growth.</p>
+      </li>
+      <li class="package-detail">
+        <span class="detail-label">Regular Review Sessions:</span>
+        <span class="detail-description">Bi-weekly (1 hour each)</span>
+        <p class="detail-info">We will schedule regular review sessions to track your progress, provide ongoing advice, and make necessary adjustments to your financial strategies.</p>
+      </li>
+      <li class="package-detail">
+        <span class="detail-label">Priority Email/Phone Support:</span>
+        <span class="detail-description">6 months</span>
+        <p class="detail-info">You will have priority access to our financial experts via email/phone for any urgent queries or concerns during the first six months of the engagement.</p>
+      </li>
+      <li class="package-detail">
+        <span class="detail-label">Exclusive Events and Resources:</span>
+        <span class="detail-description">Access to exclusive events and resources</span>
+        <p class="detail-info">As a VIP client, you will receive invitations to exclusive financial events and gain access to additional resources tailored to your needs.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="request-info" style="background-color: #666">
+    <h3>Securely submit some basic info and one of our team will reach out to you shortly.</h3>
+    <form id="contact-form" action="https://formspree.io/f/xayzzgqo" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message (Optional):</label>
+        <textarea id="message" name="message" rows="6" cols="50" maxlength="500"></textarea>
+      </div>
+      <input type="hidden" name="package" value="VIP Package">
+      <input type="submit" value="Submit" class="submit-btn">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Foxcraft Financial. All rights reserved.</p>
+  </footer>
+</body>
+</html>
