@@ -30,32 +30,6 @@
 }
 
 
-/* Styles for mobile devices */
-@media (max-width: 767px) {
-  .pricing-package {
-  width: 100%;
-}
-.pricing-package ul {
-  font-size: 14px;
-  line-height: 1.5;
-
-}
-.pricing-package {
-  /* Other styles... */
-  margin-bottom: 20px;
-}
-
-}
-
-/* Styles for tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Add your tablet styles here */
-}
-
-/* Styles for desktop devices */
-@media (min-width: 1024px) {
-  /* Add your desktop styles here */
-}
 
 
 
@@ -462,3 +436,34 @@ footer {
 footer p {
   margin: 0;
 }
+
+/* Styles for mobile devices */
+/* Styles for iPhone 12 mini screen */
+@media (max-width: 375px) {
+  .pricing-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing-package {
+    margin-bottom: 20px;
+  }
+  
+  .pricing-package ul {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+
+}
+
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Add your tablet styles here */
+}
+
+/* Styles for desktop devices */
+@media (min-width: 1024px) {
+  /* Add your desktop styles here */
+}
+
