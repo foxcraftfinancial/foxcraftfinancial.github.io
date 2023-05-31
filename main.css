@@ -32,7 +32,19 @@
 
 /* Styles for mobile devices */
 @media (max-width: 767px) {
-  /* Add your mobile styles here */
+  .pricing-package {
+  width: 100%;
+}
+.pricing-package ul {
+  font-size: 14px;
+  line-height: 1.5;
+
+}
+.pricing-package {
+  /* Other styles... */
+  margin-bottom: 20px;
+}
+
 }
 
 /* Styles for tablets */
