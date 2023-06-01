@@ -1,7 +1,7 @@
 
 /* Styles for mobile devices */
 /* Styles for iPhone 12 mini screen */
-@media (max-width: 500px) {
+@media (max-width: 666px) {
   header {
   background-color: #F9A825;
   padding: 20px;
@@ -117,11 +117,14 @@ header nav input[type="checkbox"]:checked ~ ul {
 
   /* Service section styles */
   #services {
-  padding: 10px;
-}
+  padding: 5px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    }
 
-    #services h2 {
-  font-size: 25px;
+#services h2 {
+  margin-top: 30px;
+  font-size: 30px;
   text-align: center;
   color: #F9A825;
   padding: 10px;
@@ -132,29 +135,343 @@ header nav input[type="checkbox"]:checked ~ ul {
   margin: 0 auto;
   max-width: 400px;
 }
-.service-item {
-    display: flex;
-    align-items: left;
-  margin-bottom: 10px;
-    margin-right: 10px;
+    
+    #services h3 {
+  font-size: 25px;
+  text-align: left;
+  color: #F9A825;
+  margin: auto 10px;
 }
-
+    #services p {
+  font-size: 20px;
+  text-align: left;
+  color: #000;
+  margin: 5px 10px;
+}
+.service-item {
+  display: flex;
+  align-items: center;
+    margin-top: 30px;
+  margin-bottom: 30px;
+}
 .service-icon {
-  width: 60px;
-  height: 60px;
-    margin-right: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 50px;
+    
 }
 
 .logo-overlay {
-  width: 48px;
-  height: 48px;
-   
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
 }
 
 .service-title {
-  font-size: 16px;
+  font-weight: bold;
+}
+  /* Pricing section styles */
+ #pricing {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
 }
 
+#pricing h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #F9A825;
+  padding: 10px;
+  border: 2px solid #F9A825;
+  border-radius: 5px;
+  background-color: #FDF5E6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.pricing-package {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #FDF5E6;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pricing-package h3 {
+    
+  font-size: 25px;
+  margin-top: 0;
+  font-weight: bold;
+  color: #F9A825;
+}
+
+.pricing-package ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.pricing-package li {
+  margin-bottom: 10px;
+}
+
+.pricing-package p.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #F9A825;
+  margin-bottom: 10px;
+}
+
+.pricing-package a.btn {
+  display: inline-block;
+  background-color: #F9A825;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.pricing-package a.btn:hover {
+  background-color: #fff;
+  color: #F9A825;
+  border: 2px solid #F9A825;
+}
+
+.divider {
+  display: none;
+}
+
+
+  /* Contact section styles */
+  #contact {
+    background-color: #F9A825;
+    padding: 20px;
+  }
+
+  .contact-info i {
+    margin-right: 3px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .contact-form button {
+    padding: 8px 16px;
+  }
+
+  /* Footer styles */
+  footer {
+    padding: 10px;
+  }
+}
+
+
+
+
+
+/* Styles for tablets */
+@media (min-width: 667px) and (max-width: 1023px) {
+  /* Add your tablet styles here */
+    header {
+  background-color: #F9A825;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items to the left and right */
+}
+
+.logo {
+  width: 60px; /* Adjust the width as needed */
+}
+
+.logo img {
+  width: 100%;
+}
+
+.title {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.title h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+}
+
+header nav {
+  position: relative;
+    right: -10px;
+}
+
+header nav ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: -10px;
+  background-color: #F9A825;
+  padding: 10px;
+  margin: 35;
+  list-style-type: none;
+  text-align: right; /* Align menu items to the right */
+}
+
+header nav ul li {
+  margin-bottom: 10px;
+}
+
+header nav ul li a {
+  display: block;
+  font-size: 20px;
+  padding: 5px ;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav input[type="checkbox"] {
+  display: none;
+}
+
+header nav label {
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Show the menu when checkbox is checked */
+header nav input[type="checkbox"]:checked ~ ul {
+  display: block;
+}
+
+  /* About section styles small screens */
+  #about {
+  background-color: #333;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+    
+#about .about-description {
+  max-width: 800px;
+  margin: 10px;
+    padding: 20 20px;
+}
+#about p {
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+
+
+#about a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #F9A825;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#about a.btn:hover {
+  background-color: #FFC107;
+}
+
+
+
+  /* Service section styles */
+  #services {
+  padding: 5px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    }
+
+#services h2 {
+  margin-top: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: #F9A825;
+  padding: 10px;
+  border: 2px solid #F9A825;
+  border-radius: 5px;
+  background-color: #FDF5E6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 400px;
+}
+    
+    #services h3 {
+  font-size: 25px;
+  text-align: left;
+  color: #F9A825;
+  margin: auto auto;
+}
+    #services p {
+  font-size: 20px;
+  text-align: left;
+  color: #000;
+  margin: 5px auto;
+}
+.service-item {
+  display: flex;
+  align-items: center;
+    margin-top: 60px;
+  margin-bottom: 30px;
+}
+.service-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 50px;
+    
+}
+
+.logo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+}
+
+.service-title {
+  font-weight: bold;
+}
   /* Pricing section styles */
  #pricing {
   padding: 20px;
@@ -263,13 +580,11 @@ header nav input[type="checkbox"]:checked ~ ul {
   footer {
     padding: 10px;
   }
+    
 }
 
 
-/* Styles for tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Add your tablet styles here */
-}
+
 
 
 
@@ -300,7 +615,7 @@ header {
 }
 
 .logo {
-  width: 60px; /* Adjust the width as needed */
+  width: 100px; /* Adjust the width as needed */
 }
 
 .logo img {
@@ -312,7 +627,7 @@ header {
 }
 
 .title h1 {
-  font-size: 24px;
+  font-size: 25px;
   margin: 0;
   color: #fff;
 }
@@ -330,18 +645,23 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 30px; /* Adjust the margin as needed */
-}
+      display: inline;
+      margin-right: 10px;
+    }
 
-nav ul li a {
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-}
+    nav ul li a {
+        font-size: 20px;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      transition: all 0.3s ease; /* Added transition property */
+    }
 
-nav ul li a:hover {
-  text-decoration: underline;
-}
+    nav ul li a:hover {
+      background-color: #fff;
+      color: #F9A825;
+      border-radius: 5px;
+    }
 
 header nav input[type="checkbox"],
 header nav label {
@@ -383,6 +703,7 @@ header nav label {
   background-color: #fff;
   color: #F9A825;
   border: 2px solid #F9A825;
+    
 }
 
 
@@ -390,9 +711,13 @@ header nav label {
 /* Service section styles desktop*/
 #services {
   padding: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    
 }
 
      #services h2 {
+         margin-top: 30px;
   font-size: 30px;
   text-align: center;
   color: #F9A825;
@@ -404,10 +729,25 @@ header nav label {
   margin: 0 auto;
   max-width: 400px;
 }
+    
+    #services h3 {
+  font-size: 35px;
+  text-align: left;
+  color: #F9A825;
+  margin: 5px auto;
+}
+    #services p {
+  font-size: 25px;
+  text-align: left;
+  color: #000;
+  margin: 5px auto;
+}
 .service-item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+    margin-top: 30px;
+  margin-bottom: 30px;
+   padding: 10px; 
 }
 .service-icon {
   position: relative;
@@ -416,9 +756,9 @@ header nav label {
   justify-content: center;
   width: 100px;
   height: 100px;
-  background-color: #F9A825;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 40px;
+    
 }
 
 .logo-overlay {
@@ -426,8 +766,8 @@ header nav label {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
 }
 
 .service-title {
