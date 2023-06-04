@@ -1,10 +1,28 @@
 
 /* Styles for mobile devices */
 /* Styles for iPhone 12 mini screen */
-@media (max-width: 666px) {
-  header {
-  background-color: #F9A825;
-  padding: 20px;
+@media (max-width: 666px) 
+{
+   body {
+        margin: 0; /* Add margin 0 to remove default body margin */
+       padding: 0;
+ background-color: #0b1b3f;
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    .module {
+        
+  background: url(background.png) no-repeat center/cover;
+  background-attachment: fixed;
+  background-position: center top 50px;
+  overflow: hidden;
+}
+    
+
+  header { 
+  background-color: transparent;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between; /* Align items to the left and right */
@@ -23,6 +41,7 @@
 }
 
 .title h1 {
+    text-shadow: 0 1px 0 black;
   font-size: 24px;
   margin: 0;
   color: #fff;
@@ -37,14 +56,16 @@ header h1 {
 header nav {
   position: relative;
     right: -10px;
+    
 }
 
 header nav ul {
+    
   display: none;
   position: absolute;
   top: 100%;
   right: -10px;
-  background-color: #F9A825;
+  background-color: transparent;
   padding: 10px;
   margin: 35;
   list-style-type: none;
@@ -56,12 +77,14 @@ header nav ul li {
 }
 
 header nav ul li a {
+    text-shadow: 0 1px 0 black;
   display: block;
   font-size: 20px;
   padding: 5px ;
   color: #fff;
   text-decoration: none;
 }
+   
 
 header nav input[type="checkbox"] {
   display: none;
@@ -72,71 +95,84 @@ header nav label {
   cursor: pointer;
   color: #fff;
 }
+   
 
 /* Show the menu when checkbox is checked */
 header nav input[type="checkbox"]:checked ~ ul {
   display: block;
+    
+}
+ 
+ #about {
+  text-shadow: 0 1px 0 black;
+  margin-top: 40vh; /* Adjust the percentage for smaller screens */
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%; /* Adjust the max-width as needed */
 }
 
-  /* About section styles small screens */
-  #about {
-  background-color: #333;
-  padding: 30px;
+#about p {
+  text-align: center;
+  line-height: 1.8;
+  position: relative;
+}
+
+.module > #about {
+  text-shadow: 0 1px 0 black;
+  padding: 10px;
   color: #fff;
   text-align: center;
+  overflow: hidden;
+  width: 100%;
+  background: inherit;
+  background-attachment: fixed;
 }
 
-    
-#about .about-description {
-  max-width: 800px;
-  margin: 10px;
-    padding: 20 20px;
+.module > #about::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80vw; /* Adjust the width as needed */
+  height: 99%;
+  background: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
 }
-#about p {
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-
-
-#about a.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #F9A825;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-#about a.btn:hover {
-  background-color: #FFC107;
-}
-
 
 
   /* Service section styles */
   #services {
-  padding: 5px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+  text-shadow: 0 1px 0 black;
+  color: #fff;
+margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;  
+      
     }
 
 #services h2 {
+    text-shadow: 0 1px 0 black;
   margin-top: 30px;
   font-size: 30px;
   text-align: center;
   color: #F9A825;
-  padding: 10px;
-  border: 2px solid #F9A825;
+  border: 2px solid #0e1c41;
   border-radius: 5px;
   background-color: #FDF5E6;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-  max-width: 400px;
+  
 }
     
     #services h3 {
+text-shadow: 0 1px 0 black;
   font-size: 25px;
   text-align: left;
   color: #F9A825;
@@ -145,8 +181,9 @@ header nav input[type="checkbox"]:checked ~ ul {
     #services p {
   font-size: 20px;
   text-align: left;
-  color: #000;
-  margin: 5px 10px;
+  color: #fff;
+text-shadow: 0 1px 0 black;
+  margin: 5px 15px;
 }
 .service-item {
   display: flex;
@@ -171,17 +208,24 @@ header nav input[type="checkbox"]:checked ~ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
+    margin-left: 6px
+   
 }
-
 .service-title {
   font-weight: bold;
 }
+
   /* Pricing section styles */
  #pricing {
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
+  text-shadow: 0 1px 0 white;
+  margin-top: 5vh;
+  padding: 10px;
+  color: #000;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 #pricing h1 {
@@ -207,8 +251,8 @@ header nav input[type="checkbox"]:checked ~ ul {
 
 .pricing-package {
   width: 100%;
-  max-width: 300px;
-  margin: 10px;
+  max-width: 600px;
+  margin: 40px 5vh;
   padding: 20px;
   background-color: #FDF5E6;
   border-radius: 5px;
@@ -265,26 +309,44 @@ header nav input[type="checkbox"]:checked ~ ul {
 
   /* Contact section styles */
   #contact {
-    background-color: #F9A825;
-    padding: 20px;
+      text-shadow: 0 1px 0 black;
+  
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+    background-color: transparent;
+    
   }
 
   .contact-info i {
+      background-color: transparent;
     margin-right: 3px;
   }
 
   .contact-form input,
   .contact-form textarea {
+      background-color: transparent;
     font-size: 16px;
     padding: 8px;
   }
 
   .contact-form button {
+      background-color: transparent;
     padding: 8px 16px;
   }
 
   /* Footer styles */
   footer {
+         text-shadow: 0 1px 0 black;
+  
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+    background-color: transparent;
     padding: 10px;
   }
 }
@@ -295,10 +357,24 @@ header nav input[type="checkbox"]:checked ~ ul {
 
 /* Styles for tablets */
 @media (min-width: 667px) and (max-width: 1023px) {
-  /* Add your tablet styles here */
-    header {
-  background-color: #F9A825;
-  padding: 20px;
+ 
+   body {
+       margin: 0;
+       padding: 0;
+ background-color: #0b1b3f;
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
+}
+     .module {
+  background: url(background.png) no-repeat center/cover;
+  background-attachment: fixed;
+  background-position: center top 50px;
+  overflow: hidden;
+}
+  header {
+  background-color: transparent;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between; /* Align items to the left and right */
@@ -338,7 +414,7 @@ header nav ul {
   position: absolute;
   top: 100%;
   right: -10px;
-  background-color: #F9A825;
+  background-color: transparent;
   padding: 10px;
   margin: 35;
   list-style-type: none;
@@ -374,55 +450,64 @@ header nav input[type="checkbox"]:checked ~ ul {
 
   /* About section styles small screens */
   #about {
-  background-color: #333;
+  text-shadow: 0 1px 0 black;
+   margin-top: 40vh; /* Adjust the percentage for smaller screens */
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%; /* Adjust the max-width as needed */
+}
+
+#about p {
+  text-align: center;
+  line-height: 1.8;
+  position: relative;
+}
+
+.module > #about {
+  text-shadow: 0 1px 0 black;
   padding: 30px;
   color: #fff;
   text-align: center;
+  overflow: hidden;
+  width: 100%;
+  background: inherit;
+  background-attachment: fixed;
 }
 
-    
-#about .about-description {
-  max-width: 800px;
-  margin: 10px;
-    padding: 20 20px;
+.module > #about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 30px); /* Adjust the height to include the bottom padding of #about */
+  background: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
 }
-#about p {
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-
-
-#about a.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #F9A825;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-#about a.btn:hover {
-  background-color: #FFC107;
-}
-
-
-
+ 
   /* Service section styles */
   #services {
-  padding: 5px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+  text-shadow: 0 1px 0 black;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;  
     }
 
 #services h2 {
+    text-shadow: 0 1px 0 black;
   margin-top: 30px;
   font-size: 30px;
   text-align: center;
   color: #F9A825;
   padding: 10px;
-  border: 2px solid #F9A825;
+  border: 2px solid #0e1c41;
   border-radius: 5px;
   background-color: #FDF5E6;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -431,16 +516,18 @@ header nav input[type="checkbox"]:checked ~ ul {
 }
     
     #services h3 {
+        text-shadow: 0 1px 0 black;
   font-size: 25px;
   text-align: left;
   color: #F9A825;
-  margin: auto auto;
+  margin: auto 10px;
 }
     #services p {
   font-size: 20px;
   text-align: left;
-  color: #000;
-  margin: 5px auto;
+  color: #fff;
+        text-shadow: 0 1px 0 black;
+  margin: 5px 10px;
 }
 .service-item {
   display: flex;
@@ -472,10 +559,11 @@ header nav input[type="checkbox"]:checked ~ ul {
 .service-title {
   font-weight: bold;
 }
+   
   /* Pricing section styles */
  #pricing {
   padding: 20px;
-  border-bottom: 1px solid #ccc;
+ 
 }
 
 #pricing h1 {
@@ -502,7 +590,7 @@ header nav input[type="checkbox"]:checked ~ ul {
 .pricing-package {
   width: 100%;
   max-width: 300px;
-  margin: 10px;
+  margin: 40px;
   padding: 20px;
   background-color: #FDF5E6;
   border-radius: 5px;
@@ -558,8 +646,15 @@ header nav input[type="checkbox"]:checked ~ ul {
 
   /* Contact section styles */
   #contact {
-    background-color: #F9A825;
-    padding: 20px;
+      text-shadow: 0 1px 0 black;
+  
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+    background-color: transparent;
+    
   }
 
   .contact-info i {
@@ -578,6 +673,14 @@ header nav input[type="checkbox"]:checked ~ ul {
 
   /* Footer styles */
   footer {
+         text-shadow: 0 1px 0 black;
+  
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+    background-color: transparent;
     padding: 10px;
   }
     
@@ -601,17 +704,34 @@ header nav input[type="checkbox"]:checked ~ ul {
   padding: 0;
 }
 
-/* Body styles */
-body {
+
+   body {
+ background-color: #0b1b3f;
   font-family: Arial, sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
 }
+    .module {
+  background: url(background.png) no-repeat center/cover;
+  background-attachment: fixed;
+  background-position: center top 0.10px;
+  overflow: hidden;
+}
+
+
 
 /* Header styles optimized for desktop screens */
 header {
-  background-color: #F9A825;
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0b1b3f;
+  padding: 10px;
   display: flex;
   align-items: center;
+  border-radius: 0px; /* Adjust the border-radius value as needed */
+  z-index: 999; /* Ensure the header appears above other content */
 }
 
 .logo {
@@ -645,23 +765,23 @@ nav ul {
 }
 
 nav ul li {
-      display: inline;
-      margin-right: 10px;
-    }
+  display: inline;
+  margin-right: 10px;
+}
 
-    nav ul li a {
-        font-size: 20px;
-      color: #fff;
-      text-decoration: none;
-      padding: 10px;
-      transition: all 0.3s ease; /* Added transition property */
-    }
+nav ul li a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease; /* Added transition property */
+}
 
-    nav ul li a:hover {
-      background-color: #fff;
-      color: #F9A825;
-      border-radius: 5px;
-    }
+nav ul li a:hover {
+  background-color: turquoise;
+  color: #0b1b3f;
+  border-radius: 50px;
+}
 
 header nav input[type="checkbox"],
 header nav label {
@@ -669,26 +789,45 @@ header nav label {
 }
 
 
-
-
 /* About section styles optimized for desktop screens */
 #about {
-  background-color: #333;
+  text-shadow: 0 1px 0 black;
+  margin-top: 500px;
+  padding: 10px;
   color: #fff;
-  padding: 60px;
   text-align: center;
-}
-
-#about .about-description {
-  max-width: 800px;
-  margin: 0 auto;
+  position: relative;
+  overflow: hidden;  
 }
 
 #about p {
   line-height: 1.8;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  position: relative;
 }
-
+.module > #about {
+text-shadow: 0 1px 0 black;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 10px;
+  background: inherit;
+  background-attachment: fixed;
+}
+.module > #about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
+} 
 #about a.btn {
   display: inline-block;
   background-color: #F9A825;
@@ -709,20 +848,25 @@ header nav label {
 
 
 /* Service section styles desktop*/
-#services {
-  padding: 40px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    
-}
+/* Service section styles */
+  #services {
+  text-shadow: 0 1px 0 black;
+  
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;  
+    }
 
-     #services h2 {
-         margin-top: 30px;
+#services h2 {
+    text-shadow: 0 1px 0 black;
+  margin-top: 30px;
   font-size: 30px;
   text-align: center;
   color: #F9A825;
   padding: 10px;
-  border: 2px solid #F9A825;
+  border: 2px solid #0e1c41;
   border-radius: 5px;
   background-color: #FDF5E6;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -731,16 +875,18 @@ header nav label {
 }
     
     #services h3 {
-  font-size: 35px;
-  text-align: left;
-  color: #F9A825;
-  margin: 5px auto;
-}
-    #services p {
+        text-shadow: 0 1px 0 black;
   font-size: 25px;
   text-align: left;
-  color: #000;
-  margin: 5px auto;
+  color: #F9A825;
+  margin: auto 10px;
+}
+    #services p {
+  font-size: 20px;
+  text-align: left;
+  color: #fff;
+        text-shadow: 0 1px 0 black;
+  margin: 5px 10px;
 }
 .service-item {
   display: flex;
@@ -773,11 +919,33 @@ header nav label {
 .service-title {
   font-weight: bold;
 }
-    
+  .module > #services {
+text-shadow: 0 1px 0 black;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 10px;
+  background: inherit;
+  background-attachment: fixed;
+}
+.module > #services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
+    }  
 /* Pricing styles desktop*/
 #pricing {
   padding: 40px;
-  border-bottom: 1px solid #ccc;
+  
 }
 
    #pricing h1 {
@@ -851,22 +1019,26 @@ header nav label {
 }
 
 .divider {
-  width: 2px;
-  height: 100px;
-  background-color: #333;
   margin: 0 20px;
 }
     
 /* Contact section styles desktop*/
 #contact {
-  background-color: #F9A825;
+      text-shadow: 0 1px 0 black;
+  
   color: #fff;
-  padding: 40px;
+  position: relative;
   text-align: center;
-}
+  margin-left: auto;
+  margin-right: auto;
+    background-color: transparent;
+    
+    
+  }
 
 .contact-info {
   margin-bottom: 20px;
+    
 }
 
 .contact-info i {
@@ -876,50 +1048,21 @@ header nav label {
 .contact-form {
   display: flex;
   justify-content: center;
+    
 }
 
-.contact-form input,
-.contact-form textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 100%;
-  border-radius: 5px;
-}
 
-.contact-form button {
-  background-color: #fff;
-  color: #F9A825;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #F9A825;
-  color: #fff;
-}
 
 /* Footer styles desktop*/
 footer {
-  background-color: #333;
+         text-shadow: 0 1px 0 black;
+  
   color: #fff;
-  padding: 20px;
+  position: relative;
   text-align: center;
-}
-
-footer p {
-  margin-bottom: 10px;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #F9A825;
-}
+  margin-left: auto;
+  margin-right: auto;
+    background-color: transparent;
+    padding: 10px;
+  }
 }
