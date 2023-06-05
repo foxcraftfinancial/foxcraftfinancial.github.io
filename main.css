@@ -1,9 +1,24 @@
-body{margin:0;padding:0;background-color:#0b1b3f;font-family:Arial,sans-serif}.module{background:url(background.png) no-repeat center/cover;background-attachment:fixed;background-position:center top 50px;overflow:hidden}
-header{background-color:transparent;padding:10px;display:flex;align-items:center;justify-content:space-between}.logo{width:60px}.logo img{width:100%}.title{margin-left:10px}.title h1{text-shadow:0 1px 0 black;font-size:24px;margin:0;color:#fff}header h1{font-size:20px;margin:0;color:#fff}header nav{position:relative;right:-10px}header nav ul{display:none;position:absolute;top:100%;right:-10px;background-color:transparent;padding:10px;margin:35;list-style-type:none;text-align:right}header nav ul li{margin-bottom:10px}header nav ul li a{text-shadow:0 1px 0 black;display:block;font-size:20px;padding:5px;color:#fff;text-decoration:none}header nav input[type="checkbox"]{display:none}header nav label{font-size:24px;cursor:pointer;color:#fff}header nav input[type="checkbox"]:checked~ul{display:block}
+body{margin:0;padding:0;background-color:#0b1b3f;font-family:Arial,sans-serif}
+.module{background:url(background.png) no-repeat center/cover;background-attachment:fixed;background-position:center top 50px;overflow:hidden}
+header{background-color:transparent;padding:10px;display:flex;align-items:center;justify-content:space-between}
+.logo{width:60px}
+.logo img{width:100%}
+.title{margin-left:10px}
+.title h1{text-shadow:0 1px 0 black;font-size:24px;margin:0;color:#fff}
+header h1{font-size:20px;margin:0;color:#fff}
+header nav{position:relative;right:-10px}header nav ul{display:none;position:absolute;top:100%;right:-10px;background-color:transparent;padding:10px;margin:35;list-style-type:none;text-align:right}
+header nav ul li{margin-bottom:10px}
+header nav ul li a{text-shadow:0 1px 0 black;display:block;font-size:20px;padding:5px;color:#fff;text-decoration:none}
+header nav input[type="checkbox"]{display:none}
+header nav label{font-size:24px;cursor:pointer;color:#fff}
+header nav input[type="checkbox"]:checked~ul{display:block}
     
-#about{margin:40vh auto 0;color:#fff;position:relative;max-width:85%}#about p{line-height:1.8;position:relative}.module>#about{text-shadow:0 1px 0 black;color:#fff;text-align:center;overflow:hidden;width:100%;background:inherit;background-attachment:fixed}.module>#about::before{content:"";position:absolute;top:20px;left:20px;width:80vw;height:99%;background:inherit;background-attachment:fixed;filter:blur(12px)}
+#about{margin:40vh auto 0;color:#fff;position:relative;max-width:85%}
+#about p{line-height:1.8;position:relative}
+.module>#about{text-shadow:0 1px 0 black;color:#fff;text-align:center;overflow:hidden;width:100%;background:inherit;background-attachment:fixed}
+.module>#about::before{content:"";position:absolute;top:20px;left:20px;width:80vw;height:99%;background:inherit;background-attachment:fixed;filter:blur(12px)}
 
-#services{color:#fff;position:relative;overflow:hidden;text-shadow:0 1px 0 black;text-align:left;padding:6px}
+#services{color:#fff;position:relative;overflow:hidden;text-shadow:0 1px 0 black;text-align:left;padding:6px;}
 h2{margin-top:20px;font-size:30px;text-align:center;color:#F9A825;border:2px solid #0e1c41;border-radius:5px;background-color:#FDF5E6}
 h3{font-size:25px;color:#F9A825}
 #services p{font-size:20px;color:#fff}
