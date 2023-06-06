@@ -3,15 +3,12 @@
     body{margin:0;padding:0;background-color:#0b1b3f;font-family:Arial,sans-serif}
 .module {
   position: relative;
-  z-index: -1;
-    
 }
 
 .module-bg {
   position: fixed;
   top: 0;
   left: 0;
-    
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -103,7 +100,7 @@ h3{font-size:25px;color:#F9A825}
 }
 
 
-#contact {color:#fff;position:relative;overflow:hidden;text-shadow:0 1px 0 black;line-height:1.8;text-align:left;padding:6px;text-align: center;}
+#contact {color:#fff;position:relative;overflow:hidden;text-shadow:0 1px 0 black;line-height:1.8;text-align:left;padding:6px;text-align: center;background-color: rgba(11, 27, 63, 0.8)}
 
 footer {text-shadow: 0 1px 0 black;color: #fff;text-align: center;}
 }
@@ -181,6 +178,7 @@ h3{font-size:25px;color:#F9A825}
   display: inline-block;
   background-color: #F9A825;
   color: #fff;
+    text-shadow: 0 1px 0 black;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -188,7 +186,7 @@ h3{font-size:25px;color:#F9A825}
 }
 
 
-#contact {color:#fff;position:relative;overflow:hidden;text-shadow:0 1px 0 black;line-height:1.8;text-align:left;padding:6px;text-align: center;}
-
+#contact {color:#fff;position:relative;overflow:hidden;text-shadow:0 1px 0 black;line-height:1.8;text-align:left;padding:6px;text-align: center;background-color: rgba(11, 27, 63, 0.8)}
+   
 footer {text-shadow: 0 1px 0 black;color: #fff;text-align: center;}
 }
