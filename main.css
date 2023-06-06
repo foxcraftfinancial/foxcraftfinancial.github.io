@@ -3,19 +3,25 @@
     body{margin:0;padding:0;background-color:#0b1b3f;font-family:Arial,sans-serif}
 .module {
   position: relative;
-  overflow: hidden;
+  z-index: -1;
+    
 }
 
-.module::before {
-  content: "";
-  position: absolute;
+.module-bg {
+  position: fixed;
   top: 0;
   left: 0;
+    
   width: 100%;
   height: 100%;
-  background: url(background.png) no-repeat center/cover fixed;
   z-index: -1;
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
+
+
 header{background-color:transparent;padding:10px;display:flex;align-items:center;justify-content:space-between}
 .logo{width:60px}
 .logo img{width:100%}
